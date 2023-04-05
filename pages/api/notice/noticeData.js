@@ -1,6 +1,6 @@
 import useSWR from "swr";
 
-const backendUrl = "http://127.0.0.1:5000";
+const backendUrl = process.env.BACKEND_URL || "http://127.0.0.1:5000";
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export function useNoticeList(page) {
