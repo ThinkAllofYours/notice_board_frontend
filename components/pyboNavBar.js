@@ -29,8 +29,10 @@ const PyboNavBar = () => {
       }),
     });
 
-    if (response.status !== 201) {
+    if (response.status === 200) {
       setAlertMessage({ type: "success", text: "Notice created successfully" });
+    } else if(response.status === 500){
+      setAlertMessage({ type: "danger", text: "You don't have permission to create notice" });
     } else {
       setAlertMessage({ type: "danger", text: "Failed to create notice" });
     }
