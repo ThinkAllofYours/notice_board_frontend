@@ -2,9 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "heroku-postbuild": "next build && next export"
+    "heroku-postbuild": "next build"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.0.1",
