@@ -4,7 +4,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "heroku-postbuild": "next build"
+    "heroku-postbuild": "next build && next export"
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.0.1",
